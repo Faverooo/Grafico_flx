@@ -301,52 +301,6 @@ border-radius:15px;</string>
     <zorder>verticalLayoutWidget_2</zorder>
    </widget>
   </widget>
-  <widget class="QWidget" name="horizontalLayoutWidget_3">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>340</y>
-     <width>261</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_5">
-    <item>
-     <widget class="QLabel" name="label_5">
-      <property name="minimumSize">
-       <size>
-        <width>100</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: #d9ad7c;</string>
-      </property>
-      <property name="text">
-       <string>Vi(t)</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="Vi">
-      <property name="styleSheet">
-       <string notr="true">border: 2px solid #fff2df;
-background-color: rgb(162, 131, 110);
-border-radius:6px;</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
@@ -386,7 +340,7 @@ border-radius: 20px;</string>
      <x>20</x>
      <y>320</y>
      <width>331</width>
-     <height>101</height>
+     <height>141</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -403,7 +357,7 @@ border-radius: 20px;</string>
      <x>30</x>
      <y>330</y>
      <width>311</width>
-     <height>81</height>
+     <height>121</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -418,9 +372,9 @@ border-radius: 10px</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>440</y>
+     <y>470</y>
      <width>331</width>
-     <height>141</height>
+     <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -435,9 +389,9 @@ border-radius: 20px;</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>450</y>
+     <y>480</y>
      <width>311</width>
-     <height>121</height>
+     <height>91</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -452,9 +406,9 @@ border-radius: 10px</string>
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>460</y>
+     <y>490</y>
      <width>281</width>
-     <height>101</height>
+     <height>71</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -466,16 +420,6 @@ border-radius: 10px</string>
       </property>
       <property name="text">
        <string> ANTEPRIMA GRAFICO</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="grafico">
-      <property name="styleSheet">
-       <string notr="true">background-color: #674d3c;</string>
-      </property>
-      <property name="text">
-       <string>GRAFICO</string>
       </property>
      </widget>
     </item>
@@ -561,13 +505,95 @@ border-radius: 20px;</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>349</y>
+     <width>261</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #d9ad7c;</string>
+        </property>
+        <property name="text">
+         <string>Vi(t)</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="Vi">
+        <property name="styleSheet">
+         <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_18">
+        <property name="styleSheet">
+         <string notr="true">font-size: 13px;</string>
+        </property>
+        <property name="text">
+         <string>UN PUNTO OGNI</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="tempo_ripetizioni">
+        <property name="styleSheet">
+         <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_19">
+        <property name="styleSheet">
+         <string notr="true">font-size: 13px;</string>
+        </property>
+        <property name="text">
+         <string>SECONDI</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
   <zorder>label_6</zorder>
   <zorder>label_12</zorder>
   <zorder>label_13</zorder>
   <zorder>label_11</zorder>
   <zorder>line</zorder>
   <zorder>tabWidget</zorder>
-  <zorder>horizontalLayoutWidget_3</zorder>
   <zorder>label_14</zorder>
   <zorder>label_15</zorder>
   <zorder>verticalLayoutWidget_3</zorder>
@@ -575,6 +601,7 @@ border-radius: 20px;</string>
   <zorder>label_17</zorder>
   <zorder>cartellaSalvataggi</zorder>
   <zorder>frame</zorder>
+  <zorder>verticalLayoutWidget_4</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -7,7 +7,6 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
-from numpy import gradient
 
 
 class Ui_calc_flx(object):
@@ -144,26 +143,6 @@ class Ui_calc_flx(object):
         self.label_10.raise_()
         self.verticalLayoutWidget_2.raise_()
         self.tabWidget.addTab(self.RC, "")
-        self.horizontalLayoutWidget_3 = QtWidgets.QWidget(calc_flx)
-        self.horizontalLayoutWidget_3.setGeometry(QtCore.QRect(50, 340, 261, 61))
-        self.horizontalLayoutWidget_3.setObjectName("horizontalLayoutWidget_3")
-        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_3)
-        self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        self.label_5 = QtWidgets.QLabel(self.horizontalLayoutWidget_3)
-        self.label_5.setMinimumSize(QtCore.QSize(100, 0))
-        self.label_5.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
-        self.label_5.setAutoFillBackground(False)
-        self.label_5.setStyleSheet("background-color: #d9ad7c;")
-        self.label_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_5.setObjectName("label_5")
-        self.horizontalLayout_5.addWidget(self.label_5)
-        self.Vi = QtWidgets.QLineEdit(self.horizontalLayoutWidget_3)
-        self.Vi.setStyleSheet("border: 2px solid #fff2df;\n"
-"background-color: rgb(162, 131, 110);\n"
-"border-radius:6px;")
-        self.Vi.setObjectName("Vi")
-        self.horizontalLayout_5.addWidget(self.Vi)
         self.label_6 = QtWidgets.QLabel(calc_flx)
         self.label_6.setGeometry(QtCore.QRect(-30, -10, 951, 651))
         self.label_6.setStyleSheet("background-color: #674d3c;")
@@ -176,31 +155,31 @@ class Ui_calc_flx(object):
         self.label_11.setText("")
         self.label_11.setObjectName("label_11")
         self.label_12 = QtWidgets.QLabel(calc_flx)
-        self.label_12.setGeometry(QtCore.QRect(20, 320, 331, 101))
+        self.label_12.setGeometry(QtCore.QRect(20, 320, 331, 141))
         self.label_12.setStyleSheet("background-color: rgb(162, 131, 110);\n"
 "border-radius: 20px;")
         self.label_12.setText("")
         self.label_12.setObjectName("label_12")
         self.label_13 = QtWidgets.QLabel(calc_flx)
-        self.label_13.setGeometry(QtCore.QRect(30, 330, 311, 81))
+        self.label_13.setGeometry(QtCore.QRect(30, 330, 311, 121))
         self.label_13.setStyleSheet("background-color: #d9ad7c;\n"
 "border-radius: 10px")
         self.label_13.setText("")
         self.label_13.setObjectName("label_13")
         self.label_14 = QtWidgets.QLabel(calc_flx)
-        self.label_14.setGeometry(QtCore.QRect(20, 440, 331, 141))
+        self.label_14.setGeometry(QtCore.QRect(20, 470, 331, 111))
         self.label_14.setStyleSheet("background-color: rgb(162, 131, 110);\n"
 "border-radius: 20px;")
         self.label_14.setText("")
         self.label_14.setObjectName("label_14")
         self.label_15 = QtWidgets.QLabel(calc_flx)
-        self.label_15.setGeometry(QtCore.QRect(30, 450, 311, 121))
+        self.label_15.setGeometry(QtCore.QRect(30, 480, 311, 91))
         self.label_15.setStyleSheet("background-color: #d9ad7c;\n"
 "border-radius: 10px")
         self.label_15.setText("")
         self.label_15.setObjectName("label_15")
         self.verticalLayoutWidget_3 = QtWidgets.QWidget(calc_flx)
-        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(40, 460, 281, 101))
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(40, 490, 281, 71))
         self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -210,10 +189,6 @@ class Ui_calc_flx(object):
 "")
         self.anteprimaGrafico.setObjectName("anteprimaGrafico")
         self.verticalLayout_3.addWidget(self.anteprimaGrafico)
-        self.grafico = QtWidgets.QPushButton(self.verticalLayoutWidget_3)
-        self.grafico.setStyleSheet("background-color: #674d3c;")
-        self.grafico.setObjectName("grafico")
-        self.verticalLayout_3.addWidget(self.grafico)
         self.salvataggio = QtWidgets.QPushButton(self.verticalLayoutWidget_3)
         self.salvataggio.setStyleSheet("background-color: #674d3c;")
         self.salvataggio.setObjectName("salvataggio")
@@ -241,13 +216,52 @@ class Ui_calc_flx(object):
         self.frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frame.setObjectName("frame")
+        self.verticalLayoutWidget_4 = QtWidgets.QWidget(calc_flx)
+        self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(50, 349, 261, 91))
+        self.verticalLayoutWidget_4.setObjectName("verticalLayoutWidget_4")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_4)
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.label_5 = QtWidgets.QLabel(self.verticalLayoutWidget_4)
+        self.label_5.setMinimumSize(QtCore.QSize(120, 0))
+        self.label_5.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
+        self.label_5.setAutoFillBackground(False)
+        self.label_5.setStyleSheet("background-color: #d9ad7c;")
+        self.label_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_5.setObjectName("label_5")
+        self.horizontalLayout_5.addWidget(self.label_5)
+        self.Vi = QtWidgets.QLineEdit(self.verticalLayoutWidget_4)
+        self.Vi.setStyleSheet("border: 2px solid #fff2df;\n"
+"background-color: rgb(162, 131, 110);\n"
+"border-radius:6px;")
+        self.Vi.setObjectName("Vi")
+        self.horizontalLayout_5.addWidget(self.Vi)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_5)
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.label_18 = QtWidgets.QLabel(self.verticalLayoutWidget_4)
+        self.label_18.setStyleSheet("font-size: 13px;")
+        self.label_18.setObjectName("label_18")
+        self.horizontalLayout_6.addWidget(self.label_18)
+        self.tempo_ripetizioni = QtWidgets.QLineEdit(self.verticalLayoutWidget_4)
+        self.tempo_ripetizioni.setStyleSheet("border: 2px solid #fff2df;\n"
+"background-color: rgb(162, 131, 110);\n"
+"border-radius:6px;")
+        self.tempo_ripetizioni.setObjectName("tempo_ripetizioni")
+        self.horizontalLayout_6.addWidget(self.tempo_ripetizioni)
+        self.label_19 = QtWidgets.QLabel(self.verticalLayoutWidget_4)
+        self.label_19.setStyleSheet("font-size: 13px;")
+        self.label_19.setObjectName("label_19")
+        self.horizontalLayout_6.addWidget(self.label_19)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_6)
         self.label_6.raise_()
         self.label_12.raise_()
         self.label_13.raise_()
         self.label_11.raise_()
         self.line.raise_()
         self.tabWidget.raise_()
-        self.horizontalLayoutWidget_3.raise_()
         self.label_14.raise_()
         self.label_15.raise_()
         self.verticalLayoutWidget_3.raise_()
@@ -255,10 +269,11 @@ class Ui_calc_flx(object):
         self.label_17.raise_()
         self.cartellaSalvataggi.raise_()
         self.frame.raise_()
+        self.verticalLayoutWidget_4.raise_()
+
         self.retranslateUi(calc_flx)
         self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(calc_flx)
-
 
     def retranslateUi(self, calc_flx):
         _translate = QtCore.QCoreApplication.translate
@@ -269,11 +284,12 @@ class Ui_calc_flx(object):
         self.label_3.setText(_translate("calc_flx", "RESISTENZA"))
         self.label_4.setText(_translate("calc_flx", "CONDENSATORE"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.RC), _translate("calc_flx", "RC"))
-        self.label_5.setText(_translate("calc_flx", "Vi(t)"))
         self.anteprimaGrafico.setText(_translate("calc_flx", " ANTEPRIMA GRAFICO"))
-        self.grafico.setText(_translate("calc_flx", "GRAFICO"))
         self.salvataggio.setText(_translate("calc_flx", "SALVATAGGIO DATI"))
         self.cartellaSalvataggi.setText(_translate("calc_flx", "CARTELLA SALVATAGGI"))
+        self.label_5.setText(_translate("calc_flx", "Vi(t)"))
+        self.label_18.setText(_translate("calc_flx", "UN PUNTO OGNI"))
+        self.label_19.setText(_translate("calc_flx", "SECONDI"))
 
 
 if __name__ == "__main__":
@@ -283,6 +299,4 @@ if __name__ == "__main__":
     ui = Ui_calc_flx()
     ui.setupUi(calc_flx)
     calc_flx.show()
-    calc_flx.setFixedSize(900, 600)
-    
     sys.exit(app.exec())
