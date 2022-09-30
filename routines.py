@@ -20,6 +20,7 @@ class Edit(Ui_calc_flx):
 
     #CHECK TASTI E LINK FUNZIONI
     def check(self):
+        self.horizontalLayout_20.addWidget(self.canvas)#CANVAS DENTRO AL LAYOUT
         pass
 
 
