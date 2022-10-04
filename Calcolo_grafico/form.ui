@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>900</width>
-    <height>600</height>
+    <height>750</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -38,7 +38,7 @@ font-weight:bold;
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>70</y>
+     <y>20</y>
      <width>301</width>
      <height>211</height>
     </rect>
@@ -54,7 +54,7 @@ background-color: #a2836e;</string>
     <enum>QTabWidget::Rounded</enum>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="elideMode">
     <enum>Qt::ElideNone</enum>
@@ -305,9 +305,9 @@ border-radius:15px;</string>
    <property name="geometry">
     <rect>
      <x>-30</x>
-     <y>-10</y>
+     <y>-40</y>
      <width>951</width>
-     <height>651</height>
+     <height>821</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -320,10 +320,10 @@ border-radius:15px;</string>
   <widget class="QLabel" name="label_11">
    <property name="geometry">
     <rect>
-     <x>18</x>
-     <y>45</y>
+     <x>20</x>
+     <y>10</y>
      <width>331</width>
-     <height>261</height>
+     <height>241</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -338,9 +338,9 @@ border-radius: 20px;</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>320</y>
+     <y>260</y>
      <width>331</width>
-     <height>141</height>
+     <height>321</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -355,9 +355,9 @@ border-radius: 20px;</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>330</y>
+     <y>270</y>
      <width>311</width>
-     <height>121</height>
+     <height>301</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -371,9 +371,9 @@ border-radius: 10px</string>
   <widget class="QLabel" name="label_14">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>470</y>
-     <width>331</width>
+     <x>390</x>
+     <y>490</y>
+     <width>481</width>
      <height>111</height>
     </rect>
    </property>
@@ -388,9 +388,9 @@ border-radius: 20px;</string>
   <widget class="QLabel" name="label_15">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>480</y>
-     <width>311</width>
+     <x>410</x>
+     <y>500</y>
+     <width>441</width>
      <height>91</height>
     </rect>
    </property>
@@ -405,10 +405,10 @@ border-radius: 10px</string>
   <widget class="QWidget" name="verticalLayoutWidget_3">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>490</y>
-     <width>281</width>
-     <height>71</height>
+     <x>420</x>
+     <y>507</y>
+     <width>411</width>
+     <height>81</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -439,7 +439,7 @@ border-radius: 10px</string>
    <property name="geometry">
     <rect>
      <x>390</x>
-     <y>520</y>
+     <y>610</y>
      <width>481</width>
      <height>61</height>
     </rect>
@@ -456,7 +456,7 @@ border-radius: 20px;</string>
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>530</y>
+     <y>620</y>
      <width>441</width>
      <height>41</height>
     </rect>
@@ -473,7 +473,7 @@ border-radius: 10px</string>
    <property name="geometry">
     <rect>
      <x>420</x>
-     <y>540</y>
+     <y>630</y>
      <width>421</width>
      <height>24</height>
     </rect>
@@ -488,8 +488,8 @@ border-radius: 10px</string>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>389</x>
-     <y>29</y>
+     <x>390</x>
+     <y>10</y>
      <width>481</width>
      <height>471</height>
     </rect>
@@ -505,90 +505,745 @@ border-radius: 20px;</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QWidget" name="verticalLayoutWidget_4">
+  <widget class="QLabel" name="label_32">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>349</y>
-     <width>261</width>
-     <height>91</height>
+     <x>20</x>
+     <y>600</y>
+     <width>331</width>
+     <height>71</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_4">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(162, 131, 110);
+border-radius: 20px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_33">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>610</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #d9ad7c;
+border-radius: 10px</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>620</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_5">
-      <item>
-       <widget class="QLabel" name="label_5">
-        <property name="minimumSize">
-         <size>
-          <width>120</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: #d9ad7c;</string>
-        </property>
-        <property name="text">
-         <string>Vi(t)</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="Vi">
-        <property name="styleSheet">
-         <string notr="true">border: 2px solid #fff2df;
-background-color: rgb(162, 131, 110);
-border-radius:6px;</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <widget class="QLabel" name="label_34">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>UN CAMPIONE OGNI</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_6">
-      <item>
-       <widget class="QLabel" name="label_18">
-        <property name="styleSheet">
-         <string notr="true">font-size: 13px;</string>
-        </property>
-        <property name="text">
-         <string>UN PUNTO OGNI</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="tempo_ripetizioni">
-        <property name="styleSheet">
-         <string notr="true">border: 2px solid #fff2df;
+     <widget class="QLineEdit" name="tempo_ripetizioni">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #fff2df;
 background-color: rgb(162, 131, 110);
 border-radius:6px;</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_19">
-        <property name="styleSheet">
-         <string notr="true">font-size: 13px;</string>
-        </property>
-        <property name="text">
-         <string>SECONDI</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_35">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>SEC</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>289</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <item>
+     <widget class="QCheckBox" name="box_qiadra">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_20">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>Vi(t) [QUADRA] = </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Vi_quad1">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Vi_quad2">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>370</y>
+     <width>289</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <widget class="QCheckBox" name="box_rampa">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_21">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>Vi(t) [RAMPA] = tempo</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>30</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>410</y>
+     <width>289</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_9">
+    <item>
+     <widget class="QCheckBox" name="box_parabola">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_22">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>Vi(t) [Parabola] =</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_24">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>1/2*T^2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>450</y>
+     <width>289</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_11">
+    <item>
+     <widget class="QCheckBox" name="box_sinusoide">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_23">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>Vi(t)=</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="const_sinusoide_1">
+      <property name="maximumSize">
+       <size>
+        <width>40</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_25">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>*sen(wt)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_26">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>F=</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="omega_1">
+      <property name="maximumSize">
+       <size>
+        <width>40</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>490</y>
+     <width>289</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_12">
+    <item>
+     <widget class="QCheckBox" name="box_sinusoide_2">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_27">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>Vi(t)=</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="const_sinusoide_2">
+      <property name="maximumSize">
+       <size>
+        <width>40</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_28">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>*sen(wt)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_29">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>F=</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="omega_2">
+      <property name="maximumSize">
+       <size>
+        <width>40</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>520</y>
+     <width>289</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_13">
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>65</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_30">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="disturbo">
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_31">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>*sen(w1000t)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_7">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>290</y>
+     <width>289</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_14">
+    <item>
+     <widget class="QCheckBox" name="box_costante">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_36">
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #d9ad7c;</string>
+      </property>
+      <property name="text">
+       <string>Vi(t) [COSTANTE] =</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="Vi_const">
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid #fff2df;
+background-color: rgb(162, 131, 110);
+border-radius:6px;</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
   <zorder>label_6</zorder>
+  <zorder>label_32</zorder>
+  <zorder>label_33</zorder>
   <zorder>label_12</zorder>
   <zorder>label_13</zorder>
   <zorder>label_11</zorder>
@@ -601,7 +1256,14 @@ border-radius:6px;</string>
   <zorder>label_17</zorder>
   <zorder>cartellaSalvataggi</zorder>
   <zorder>frame</zorder>
-  <zorder>verticalLayoutWidget_4</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>layoutWidget_3</zorder>
+  <zorder>layoutWidget_4</zorder>
+  <zorder>layoutWidget_5</zorder>
+  <zorder>layoutWidget_6</zorder>
+  <zorder>layoutWidget_7</zorder>
  </widget>
  <resources/>
  <connections/>
