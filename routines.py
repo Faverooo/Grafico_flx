@@ -11,15 +11,16 @@ import math
 
 #CREAZIONE DIR SALVATAGGIO DATI
 try:
-    os.makedirs("Salvataggi grafici")
+    os.makedirs("Salvataggi_grafici")
 except:
     pass
 percorso = os.getcwd()
-os.chdir(f"{percorso}/Salvataggi grafici")
+os.chdir(f"{percorso}/Salvataggi_grafici")
 percorso = os.getcwd()
 
 Vo_list = []
 tempo_list = []
+Vi_list = []
 Vi = 0
 Vi_caso = 0
 caso = 0
@@ -47,6 +48,7 @@ class Edit(Ui_calc_flx):
         self.anteprimaGrafico.clicked.connect(self.anteGraph)
         self.salvataggio.clicked.connect(self.save)
         self.cartellaSalvataggi.clicked.connect(self.apricartella)
+        self.autoset.clicked.connect(self.auto_delta)
 
         
 
@@ -56,7 +58,7 @@ class Edit(Ui_calc_flx):
         errore.exec()
 
     def Graph(self):
-        # CHECL SISTEMA DA USARE
+        # CHECK SISTEMA DA USARE
         global induttanza, resistenza_1, resistenza_2, condensatore
         induttanza = self.induttanza.text()
         resistenza_1 = self.resistenza_1.text()
@@ -69,13 +71,13 @@ class Edit(Ui_calc_flx):
         if(((induttanza=="") and (resistenza_1=="")) and ((resistenza_2=="") and (condensatore==""))):
             self.errore("Mettere dei dati")
             return
-        tempoRipetizioni= self.tempo_ripetizioni.text()
-        if(tempoRipetizioni==""):
+        deltaT= self.tempo_ripetizioni.text()
+        if(deltaT==""):
             self.errore("Scrivi un tempo per la campionatura ")
             return
         else:
             try:
-                tempoRipetizioni = float(self.tempo_ripetizioni.text())
+                deltaT = float(self.tempo_ripetizioni.text())
             except:
                 self.errore("Scrivi un numero sul tempo di campionatura")
                 return
@@ -134,10 +136,11 @@ class Edit(Ui_calc_flx):
         
         Vo=0
         tempo = 0
-        global Vo_list, tempo_list
+        global Vo_list, tempo_list,Vi_list
+        Vi_list=[]
         Vo_list = []
         tempo_list = []
-        for item in range(50):
+        for item in range(100):
             if(Vi_caso==1): #GRADINO
                 try:
                     Vi=int(self.Vi_const.text())
@@ -206,11 +209,14 @@ class Edit(Ui_calc_flx):
             
                
 
-            Vo = ((tempo/tau)*Vi)+Vo*((tau-tempo)/tau)
+            Vo = ((deltaT/tau)*Vi)+Vo*((tau-deltaT)/tau)
+            
             Vo_list.append(Vo)
             tempo_list.append(tempo)
-            tempo = tempo+tempoRipetizioni
+            Vi_list.append(Vi)
+            tempo = tempo+deltaT
         self.figure.clear()
+        plt.ticklabel_format(useOffset=False, style='plain')
         plt.plot(tempo_list,Vo_list)
         self.canvas.draw()
         
@@ -223,7 +229,7 @@ class Edit(Ui_calc_flx):
             return
         tabella = {
             "TEMPO":tempo_list,
-            "Vi(t)":Vi,
+            "Vi(t)":Vi_list,
             "Vo(t)":Vo_list
         }
         convert=pd.DataFrame(tabella)
@@ -234,6 +240,48 @@ class Edit(Ui_calc_flx):
         
 
 
+
+    def auto_delta(self):
+        global induttanza, resistenza_1, resistenza_2, condensatore
+        induttanza = self.induttanza.text()
+        resistenza_1 = self.resistenza_1.text()
+        resistenza_2 = self.resistenza_2.text()
+        condensatore = self.condensatore.text()
+        global caso         #PER VEDERE COME FARE IL GRAFICO
+        if(((induttanza!="") and (resistenza_1!="")) and ((resistenza_2!="") and (condensatore!=""))):
+            self.errore("Scegliere il tipo di circuito da analizzare")
+            return
+        if(((induttanza=="") and (resistenza_1=="")) and ((resistenza_2=="") and (condensatore==""))):
+            self.errore("Mettere dei dati")
+            return
+        if ((induttanza!="") and (resistenza_1!="")):
+            try:
+                induttanza = float(self.induttanza.text())
+            except:
+                self.errore("Scrivi un numero sulla induttanza")
+                return
+            try:
+                resistenza_1 = int(self.resistenza_1.text())
+            except:
+                self.errore("Scrivi un numero intero sulla resistenza")
+                return
+            tau = induttanza/resistenza_1
+        elif((resistenza_2!="") and (condensatore!="")):
+            try:
+                resistenza_2 = int(self.resistenza_2.text())
+            except:
+                self.errore("Scrivi un numero intero sulla resistenza")
+                return
+            try:
+                condensatore = float(self.condensatore.text())
+            except:
+                self.errore("Scrivi un numero sul condensatore")
+                return
+            tau = resistenza_2*condensatore
+        else:
+            self.errore("Scrivi numeri per formare il tau")
+        set_delta = tau/10
+        self.tempo_ripetizioni.setText(f"{set_delta}")
 
     def apricartella(self):
         try:
